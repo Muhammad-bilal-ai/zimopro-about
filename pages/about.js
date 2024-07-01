@@ -3,11 +3,12 @@ import Image from "next/image";
 
 function about() {
   return (
-    <div className="relative top-[0px] left-[0px] w-[1920px] h-[1080px] min-h-screen bg-cover bg-center">
+    <div className="relative w-full min-h-screen overflow-x-hidden">
       <Image
         src="/2023-01-19_22-48-19.png"
         alt="background image"
-        layout="fill"
+        width={1921}
+        height={1080}
       />
       <div className="absolute top-[68px] left-[60px] w-[66px] h-[7px] bg-transparent bg-no-repeat">
         <Image src="/Rectangle 178.png" alt="Icon" width={50} height={50} />
@@ -47,6 +48,37 @@ function about() {
       </div>
       <div className="absolute top-[80px] left-[1724px] w-[21px] h-[25px] bg-transparent bg-no-repeat">
         <Image src="/Path 7582.png" alt="icon" width={21} height={25} />
+      </div>
+      <div className="absolute top-[80px] left-[1834px] w-[21px] h-[25px] bg-transparent bg-no-repeat">
+        <Image src="/Group 2867.png" alt="icon" width={21} height={25} />
+      </div>
+      <div className="absolute top-[175px] left-[60px] w-[99px] h-[30px] bg-transparent bg-no-repeat">
+        <Image src="/Group 3214.png" alt="icon" width={99} height={30} />
+      </div>
+      <div className="absolute top-[470px] left-[60px] w-[224px] h-[53px] bg-transparent bg-no-repeat">
+        <Image src="/Discover.png" alt="icon" width={99} height={30} />
+      </div>
+      <div className="absolute top-[526px] left-[60px] w-[500px] h-[80px] bg-transparent bg-no-repeat">
+        <Image src="/A NEW WORLD.png" alt="icon" width={500} height={80} />
+      </div>
+      <div className="absolute top-[632px] left-[60px] w-[413px] h-[27px] bg-transparent bg-no-repeat">
+        <Image
+          src="/FOR THOSE WHO WISH FOR MORE....png"
+          alt="icon"
+          width={413}
+          height={27}
+        />
+      </div>
+      <div className="absolute top-[923px] left-[720px] w-[480px] h-[27px] bg-transparent bg-no-repeat">
+        <Image
+          src="/Bringing the world closer together.png"
+          alt="icon"
+          width={480}
+          height={27}
+        />
+      </div>
+      <div className="absolute top-[1011px] left-[921px] w-[80px] h-[40px] bg-transparent bg-no-repeat">
+        <Image src="/Path 59.png" alt="icon" width={480} height={27} />
       </div>
     </div>
   );

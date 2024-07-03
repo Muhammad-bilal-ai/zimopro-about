@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.word-spacing {
+  word-spacing: 3px; /* Adjust the value as needed */
+}
+
 * {
   margin: 0;
   padding: 0;

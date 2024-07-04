@@ -4,6 +4,7 @@ import { about } from "./about";
 import Hero from "@/components/Hero";
 import Header from "@/components/header";
 import AboutUs from "@/components/AboutUs";
+import Categories from "@/components/Categories";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,6 +13,7 @@ export default function Home() {
     <div className="overflow-x-hidden">
       <Hero />
       <AboutUs />
+      <Categories />
     </div>
   );
 }

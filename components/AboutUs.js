@@ -9,7 +9,7 @@ function AboutUs() {
         A REAL ESTATE AND PROPERTY PLATFORM THAT IS CHANGING THE WORLD
       </div>
       {/* first aside in the left */}
-      <aside className="absolute top-1/4 flex flex-col justify-between left-8 py-2 text-slate-700 font-sans font-semibold tracking-wider">
+      <aside className="absolute top-1/4 flex flex-col justify-between left-12 py-2 text-slate-700 font-sans font-semibold tracking-wider">
         <div>
           <p className="text-xl">A REVOLUTIONARY PLATFORM</p>
         </div>
@@ -33,7 +33,7 @@ function AboutUs() {
         </div>
       </aside>
       {/* 3rd aside in the left */}
-      <aside className="absolute top-1/2 left-8 pt-48  text-slate-700 font-sans font-semibold word-spacing tracking-wider">
+      <aside className="absolute top-1/2 left-12 pt-48  text-slate-700 font-sans font-semibold word-spacing tracking-wider">
         <div>
           <p className="text-xl">THE BEST OF THE BEST</p>
           <p className="text-sm">

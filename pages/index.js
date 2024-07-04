@@ -5,6 +5,7 @@ import AboutUs from "@/components/AboutUs";
 import Categories from "@/components/Categories";
 import Forth_section from "@/components/Forth_Section";
 import Fifth_Section from "@/components/Fifth_Section";
+import Global_Section from "@/components/Global_Section";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,6 +17,7 @@ export default function Home() {
       <Categories />
       <Forth_section />
       <Fifth_Section />
+      <Global_Section />
     </div>
   );
 }

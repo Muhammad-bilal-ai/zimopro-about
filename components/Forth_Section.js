@@ -10,7 +10,7 @@ function Forth_section() {
             src="/Forth_section/zimo_logo.png"
             alt="zimo logo"
             width={565.7}
-            height={152.98}
+            height={0}
           />
           <h1 className="text-4xl text-slate-700 font-sans tracking-widest word-spacing mt-8">
             ONE SOURCE

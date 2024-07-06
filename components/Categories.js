@@ -1,15 +1,17 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import Image from "next/image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { motion } from "framer-motion";
 
-function categories() {
+const categories = forwardRef((props, ref) => {
   //next button click for carousel
   function SampleNextArrow(props) {
     const { className, style, onClick } = props;
     return (
       <div
+        ref={ref}
         className={`${className} custom-next-arrow`}
         style={{ ...style, display: "block", right: "-25px" }}
         onClick={onClick}
@@ -55,6 +57,26 @@ function categories() {
     autoplay: true,
     autoplaySpeed: 2000,
     pauseOnHover: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+    ],
   };
   return (
     // setting up section screen
@@ -62,7 +84,7 @@ function categories() {
       {/* setting up content on the screen */}
       <div className="absolute flex justify-between items-center space-x-10 pt-8 left-16 right-16">
         {/* upper screen text and arrow buttons */}
-        <div className="text-slate-700 text-2xl font-semibold tracking-wider">
+        <div className="text-slate-700 sm:text-xs sm:pb-4 md:text-2xl font-semibold tracking-wider">
           <h1>OUR CATEGORIES</h1>
         </div>
         <div className="flex justify-end space-x-16">
@@ -149,14 +171,14 @@ function categories() {
           </div>
         </Slider>
       </div>
-      <div className=" absolute text-slate-900 text-3xl word-spacing font-semibold bottom-0 tracking-widest left-1/2  transform -translate-x-1/2 -translate-y-1/2 pb-20">
+      <motion.div className=" absolute text-slate-900 text-3xl word-spacing font-semibold bottom-0 tracking-widest left-1/2  transform -translate-x-1/2 -translate-y-1/2 pb-20">
         ONE PLATFORM FOR ALL PREMIUM LISTINGS
-      </div>
-      <div className=" absolute text-slate-900 text-2xl word-spacing tracking-widest font-semibold bottom-0 left-1/2  transform -translate-x-1/2 -translate-y-1/2 pb-8">
+      </motion.div>
+      <motion.div className=" absolute text-slate-900 text-2xl word-spacing tracking-widest font-semibold bottom-0 left-1/2  transform -translate-x-1/2 -translate-y-1/2 pb-8">
         UNLIMITED POTENTIAL
-      </div>
+      </motion.div>
     </div>
   );
-}
+});
 
 export default categories;

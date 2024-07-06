@@ -1,8 +1,15 @@
 import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
+
 function Header() {
   return (
-    <header className="absolute w-full flex justify-between items-center px-12 sm:px-4 md:px-8 lg:px-12 pt-8 sm:pt-10 md:pt-12 lg:pt-14 xl:pt-16">
+    <motion.header
+      initial={{ opacity: 0, y: -100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      className="absolute w-full flex justify-between items-center px-12 sm:px-12 md:px-12 lg:px-12 pt-8 sm:pt-10 md:pt-12 lg:pt-14 xl:pt-16"
+    >
       {/* left side */}
       <div className="flex items-center justify-between space-x-8 md:space-x-6 lg:space-x-8 ">
         <div>
@@ -69,7 +76,7 @@ function Header() {
           />
         </div>
       </div>
-    </header>
+    </motion.header>
   );
 }
 

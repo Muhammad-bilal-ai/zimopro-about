@@ -1,11 +1,28 @@
 import Image from "next/image";
-import React from "react";
+import React, { useRef } from "react";
+import { motion, useInView, ref } from "framer-motion";
 
 function Forth_section() {
+  const isInView = useInView({
+    triggerOnce: true,
+    threshold: 1,
+  });
   return (
-    <div className="relative h-screen w-full bg-white bg-cover bg-center">
+    <div
+      // refs
+      className="relative h-screen w-full bg-white bg-cover bg-center"
+    >
       <div className="absolute h-screen flex justify-between itmes-center left-12 right-12">
-        <div className="flex-1 flex flex-col justify-center">
+        <motion.div
+          // initial={{ opacity: 0, x: -200, y: 0 }}
+          // animate={
+          //   isInView
+          //     ? { opacity: 1, x: 0, y: 0 }
+          //     : { opacity: 0, x: -200, y: 0 }
+          // }
+          // transition={{ duration: 2 }}
+          className="flex-1 flex flex-col justify-center"
+        >
           <Image
             src="/Forth_section/zimo_logo.png"
             alt="zimo logo"
@@ -21,7 +38,7 @@ function Forth_section() {
           <p className="text-sm font-sans text-slate-400 tracking-widest word-spacing py-2">
             FOR ALL PREMIUM LISTINGS
           </p>
-        </div>
+        </motion.div>
         <div className="flex-1 flex flex-col justify-center">
           <Image
             src="/Forth_section/image_1.png"

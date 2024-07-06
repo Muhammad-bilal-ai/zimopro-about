@@ -1,11 +1,16 @@
-import React, { forwardRef } from "react";
+import React, { forwardRef, useRef } from "react";
 import Image from "next/image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 
 const categories = forwardRef((props, ref) => {
+  const categoriesRef = useRef(null);
+  const isInView = useInView(categoriesRef, {
+    triggerOnce: true,
+    threshold: 1,
+  });
   //next button click for carousel
   function SampleNextArrow(props) {
     const { className, style, onClick } = props;
@@ -80,14 +85,29 @@ const categories = forwardRef((props, ref) => {
   };
   return (
     // setting up section screen
-    <div className="relative h-screen w-full bg-cover bg-transparent bg-white">
+    <div
+      ref={(node) => {
+        categoriesRef.current = node;
+        ref.current = node;
+      }}
+      className="relative h-screen w-full bg-cover bg-transparent bg-white"
+    >
       {/* setting up content on the screen */}
-      <div className="absolute flex justify-between items-center space-x-10 pt-8 left-16 right-16">
+      <motion.div
+        initial={{ opacity: 0, x: -200, y: -200 }}
+        animate={
+          isInView
+            ? { opacity: 1, x: 0, y: 0 }
+            : { opacity: 0, x: -200, y: -200 }
+        }
+        transition={{ duration: 2 }}
+        className="absolute flex justify-between items-center"
+      >
         {/* upper screen text and arrow buttons */}
-        <div className="text-slate-700 sm:text-xs sm:pb-4 md:text-2xl font-semibold tracking-wider">
+        <div className="absolute  text-slate-700 sm:text-xs sm:pb-4 md:text-3xl font-semibold tracking-wider left-16 text-nowrap pt-8">
           <h1>OUR CATEGORIES</h1>
         </div>
-        <div className="flex justify-end space-x-16">
+        {/* <div className="flex justify-end space-x-16">
           <Image
             src="/categories_section/arrow_left.png"
             alt="icon"
@@ -100,10 +120,10 @@ const categories = forwardRef((props, ref) => {
             width={20}
             height={0}
           />
-        </div>
-      </div>
+        </div> */}
+      </motion.div>
       {/* carousel */}
-      <div className="absolute mt-36 max-w-screen-2xl left-16 right-12">
+      <motion.div className="absolute mt-36 max-w-screen-2xl left-16 right-12">
         <Slider {...settings}>
           <div className="px-4">
             <Image
@@ -170,7 +190,7 @@ const categories = forwardRef((props, ref) => {
             />
           </div>
         </Slider>
-      </div>
+      </motion.div>
       <motion.div className=" absolute text-slate-900 text-3xl word-spacing font-semibold bottom-0 tracking-widest left-1/2  transform -translate-x-1/2 -translate-y-1/2 pb-20">
         ONE PLATFORM FOR ALL PREMIUM LISTINGS
       </motion.div>

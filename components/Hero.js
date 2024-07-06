@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Header from "./header";
 import { motion } from "framer-motion";
-import { useRef } from "react";
 
 const Hero = ({ scrollToAboutUs }) => {
   return (

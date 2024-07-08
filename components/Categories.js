@@ -104,7 +104,7 @@ const categories = forwardRef((props, ref) => {
         className="absolute flex justify-between items-center"
       >
         {/* upper screen text and arrow buttons */}
-        <div className="absolute  text-slate-700 sm:text-xs sm:pb-4 md:text-3xl font-semibold tracking-wider left-16 text-nowrap pt-8">
+        <div className="absolute  text-slate-700 sm:text-xs md:text-3xl font-semibold tracking-wider left-16 text-nowrap pt-16">
           <h1>OUR CATEGORIES</h1>
         </div>
         {/* <div className="flex justify-end space-x-16">

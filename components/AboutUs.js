@@ -1,7 +1,8 @@
-import React, { forwardRef, useRef } from "react";
+import React, { forwardRef, useRef, useState } from "react";
 import Image from "next/image";
 import { motion, useInView } from "framer-motion";
 const AboutUs = forwardRef(({ scrollToCategories }, ref) => {
+  const [isHovered, setIsHovered] = useState(false);
   const aboutUsRef = useRef(null);
   const isInView = useInView(aboutUsRef, {
     triggerOnce: true,
@@ -31,10 +32,12 @@ const AboutUs = forwardRef(({ scrollToCategories }, ref) => {
         className="absolute top-1/4 flex flex-col justify-between left-12 py-2 text-slate-700 font-sans font-semibold tracking-wider"
       >
         <div>
-          <p className="text-xl">A REVOLUTIONARY PLATFORM</p>
+          <p className="text-xl word-spacing">A REVOLUTIONARY PLATFORM</p>
         </div>
-        <div className="text-4xl">ENTRIES - SELLERS</div>
-        <div className="text-5xl">WORLDWIDE</div>
+        <div className="text-4xl tracking-normal word-spacing">
+          ENTRIES - SELLERS
+        </div>
+        <div className="text-5xl word-spacing tracking-wider">WORLDWIDE</div>
       </motion.aside>
       {/* 2nd aside in the right */}
       <motion.aside
@@ -83,7 +86,9 @@ const AboutUs = forwardRef(({ scrollToCategories }, ref) => {
       </motion.aside>
       <motion.div
         initial={{ y: 0 }}
-        animate={{ y: [0, 10, 0] }}
+        animate={isHovered ? { y: 0 } : { y: [0, 10, 0] }}
+        onHoverStart={() => setIsHovered(true)}
+        onHoverEnd={() => setIsHovered(false)}
         onClick={scrollToCategories}
         transition={{
           duration: 1,

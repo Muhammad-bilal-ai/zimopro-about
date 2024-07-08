@@ -1,8 +1,10 @@
 import Image from "next/image";
 import Header from "./header";
-import { motion } from "framer-motion";
+import { color, motion } from "framer-motion";
+import { useState } from "react";
 
 const Hero = ({ scrollToAboutUs }) => {
+  const [isHovered, setIsHovered] = useState(false);
   return (
     <div
       className="relative h-screen bg-cover bg-center"
@@ -32,20 +34,26 @@ const Hero = ({ scrollToAboutUs }) => {
           transition={{ duration: 0.5 }}
           className="absolute text-white py-4 font-sans pt-72 left-12 sm:left-2 md:left-12 word-spacing tracking-widest"
         >
-          <h1>DISCOVER</h1>{" "}
-          <p className="sm:text-sm md:text-5xl">A NEW WORLD</p>
-          <p className="text-sm py-4 text-slate-600">
+          <h1 className="sm:text-sm: md:text-lg word-spacing tracking-widest">
+            DISCOVER
+          </h1>{" "}
+          <p className="sm:text-sm md:text-5xl word-spacing tracking-widest py-4">
+            A NEW WORLD
+          </p>
+          <p className="text-sm md:text-sm py-4" style={{ color: "#707070" }}>
             FOR THOSE WHO WISH FOR MORE...
           </p>
         </motion.div>
         <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-16">
-          <p className="text-sm text-slate-600 font-sans tracking-widest">
+          <p className="text-sm font-sans tracking-widest">
             BRINGING THE WORLD CLOSER TOGETHER
           </p>
         </div>
         <motion.div
           initial={{ y: 0 }}
-          animate={{ y: [0, 10, 0] }}
+          animate={isHovered ? { y: 0 } : { y: [0, 10, 0] }}
+          onHoverStart={() => setIsHovered(true)}
+          onHoverEnd={() => setIsHovered(false)}
           onClick={scrollToAboutUs}
           transition={{ duration: 1, repeat: Infinity, ease: "easeOut" }}
           className="absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-6"

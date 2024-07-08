@@ -8,6 +8,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        customeSlate: "#707070",
+      },
       screens: {
         xs: "480px",
         sm: "640px",

@@ -8,7 +8,7 @@ function Header() {
       initial={{ opacity: 0, y: -100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="absolute w-full flex justify-between items-center px-12 sm:px-12 md:px-12 lg:px-12 pt-8 sm:pt-10 md:pt-12 lg:pt-14 xl:pt-16"
+      className="absolute w-full flex justify-between items-center px-12 sm:px-8 md:px-12 lg:px-12 pt-8 sm:pt-10 md:pt-12 lg:pt-12 xl:pt-12"
     >
       {/* left side */}
       <div className="flex items-center justify-between space-x-8 md:space-x-6 lg:space-x-8 ">

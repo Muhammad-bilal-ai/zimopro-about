@@ -1,20 +1,37 @@
-import React from "react";
-import Image from "next/image";
-import Header from "@/components/header";
+// src/SwiperComponent.js
 
-function about() {
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/swiper-bundle.css";
+import SwiperCore, { Autoplay, Pagination, Navigation } from "swiper";
+
+// Install Swiper modules
+SwiperCore.use([Autoplay, Pagination, Navigation]);
+
+const SwiperComponent = () => {
   return (
-    <>
-      <Header />
-      <div className="relative w-full h-screen lg:h-[140vh] 2xl:h-[120vh] 3xl:h-[110vh] overflow-hidden">
-        <Image
-          src="/2023-01-19_22-48-19.png"
-          alt="background image"
-          width={1921}
-          height={1080}
-        />
-      </div>
-    </>
+    <Swiper
+      spaceBetween={50}
+      slidesPerView={1}
+      autoplay={{
+        delay: 2500,
+        disableOnInteraction: false,
+      }}
+    >
+      <SwiperSlide>
+        <div style={{ background: "lightblue", height: "300px" }}>Slide 1</div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div style={{ background: "lightcoral", height: "300px" }}>Slide 2</div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div style={{ background: "lightgreen", height: "300px" }}>Slide 3</div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div style={{ background: "lightpink", height: "300px" }}>Slide 4</div>
+      </SwiperSlide>
+    </Swiper>
   );
-}
-export default about;
+};
+
+export default SwiperComponent;

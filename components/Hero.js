@@ -20,19 +20,22 @@ const Hero = ({ scrollToAboutUs }) => {
           transition={{ duration: 0.5 }}
           className="absolute left-12 sm:left-1 md:left-12 sm:pt-18 md:pt-48"
         >
-          <Image
-            src="/hero_section/back_arrow.png"
-            alt="icon"
-            width={99}
-            height={0}
-          />
+          <button>
+            {" "}
+            <Image
+              src="/hero_section/back_arrow.png"
+              alt="icon"
+              width={99}
+              height={0}
+            />
+          </button>
         </motion.div>
         {/* text area hero_section */}
         <motion.div
           initial={{ initial: 0, x: -100, y: -50 }}
           animate={{ initial: 1, x: 0, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="absolute text-white py-4 font-sans pt-72 left-12 sm:left-2 md:left-12 word-spacing tracking-widest"
+          className="absolute flex flex-col justify-center items-start text-white font-sans top-1/2 transform -translate-y-1/2 left-12 sm:left-2 md:left-12 word-spacing tracking-widest mb-8"
         >
           <h1 className="sm:text-sm: md:text-lg word-spacing tracking-widest">
             DISCOVER
@@ -45,7 +48,10 @@ const Hero = ({ scrollToAboutUs }) => {
           </p>
         </motion.div>
         <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-16">
-          <p className="text-sm font-sans tracking-widest">
+          <p
+            className="text-sm font-sans tracking-widest"
+            style={{ color: "#707070" }}
+          >
             BRINGING THE WORLD CLOSER TOGETHER
           </p>
         </div>

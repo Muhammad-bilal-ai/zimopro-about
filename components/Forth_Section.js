@@ -24,10 +24,10 @@ function Forth_section() {
           className="flex-1 flex flex-col justify-center"
         >
           <Image
-            src="/Forth_section/zimo_logo.png"
+            src="/forth_section/zimo_logo.png"
             alt="zimo logo"
-            width={565.7}
-            height={0}
+            width={565}
+            height={152}
           />
           <h1 className="text-4xl text-slate-700 font-sans tracking-widest word-spacing mt-8">
             ONE SOURCE
@@ -41,10 +41,10 @@ function Forth_section() {
         </motion.div>
         <div className="flex-1 flex flex-col justify-center">
           <Image
-            src="/Forth_section/image_1.png"
+            src="/forth_section/image_1.png"
             alt="zimo logo"
             width={1083}
-            height={0}
+            height={718}
           />
           <h1 className="text-4xl text-slate-700 font-sans tracking-widest word-spacing mt-8 text-center">
             LET YOUR DREAMS FIND YOU

@@ -11,18 +11,18 @@ function Fifth_Section() {
         <h1 className="font-semibold text-2xl pb-4 text-left">
           PERSONALISED FOR YOU
         </h1>
-        <p className="text-slate-400 text-left word-spacing tracking-wider">
+        <p className="text-slate-400 text-left word-spacing tracking-wide">
           DELIVERING THOUSANDS OF PERSONALISED ALERTS
         </p>
-        <p className="text-slate-400 text-left tracking-widest">
+        <p className="text-slate-400 text-left tracking-wider">
           EVERYDAY, OUR USERS CAN BE FIRST IN LINE WHEN
         </p>
         <p className="text-slate-400 text-left">
           THAT OPPURTUNITY OF A LIFETIME IS HERE
         </p>
       </div>
-      <div className="absolute flex w-full items-center justify-center top-1/2 transform -translate-y-1/2">
-        <div className="flex-1 flex justify-center">
+      <div className="absolute flex w-full items-center top-1/2 transform -translate-y-1/2 p-12">
+        <div className="flex-1 flex justify-start">
           <Image
             src="/fifth_section/logo.png"
             alt="logo icon"
@@ -30,7 +30,7 @@ function Fifth_Section() {
             height={134}
           />
         </div>
-        <div className="flex-1 flex items-center justify-center space-x-2 text-white word-spacing">
+        <div className="flex-1 flex justify-end space-x-2 text-white word-spacing">
           <span>CREATE USER ID</span>
           <Image
             src="/fifth_section/arrow.png"

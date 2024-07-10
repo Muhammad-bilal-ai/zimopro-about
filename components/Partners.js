@@ -3,7 +3,7 @@ import React from "react";
 
 function Partners() {
   return (
-    <div className="relative w-screen h-screen bg-cover bg-center bg-white">
+    <div className="relative w-screen h-screen bg-cover bg-center bg-white overflow-hidden">
       <div className="absolute inset-0 flex flex-row items-center justify-center left-12 sm:left-16 md:left-12 space-x-64">
         <div className="flex flex-col p-4 m-2">
           <div>

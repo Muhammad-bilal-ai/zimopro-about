@@ -4,7 +4,7 @@ import React from "react";
 function Fifth_Section() {
   return (
     <div
-      className="relative h-screen bg-cover bg-center"
+      className="relative h-screen bg-cover bg-center overflow-hidden"
       style={{ backgroundImage: `url("/fifth_section/image_1.png")` }}
     >
       <div className="absolute text-white text-center right-0 p-16 whitespace-nowrap">

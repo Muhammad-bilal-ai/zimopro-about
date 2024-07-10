@@ -22,7 +22,7 @@ const categories = forwardRef((props, ref) => {
         categoriesRef.current = node;
         ref.current = node;
       }}
-      className="relative h-screen w-full bg-cover bg-transparent bg-white"
+      className="relative h-screen w-full bg-cover bg-transparent bg-white overflow-hidden"
     >
       {/* setting up content on the screen */}
       <motion.div
@@ -59,6 +59,23 @@ const categories = forwardRef((props, ref) => {
         <Swiper
           spaceBetween={50}
           slidesPerView={4}
+          breakpoints={{
+            640: {
+              slidesPerView: 1,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 50,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 50,
+            },
+            1280: {
+              slidesPerView: 4,
+              spaceBetween: 50,
+            },
+          }}
           onSwiper={(swiper) => console.log(swiper)}
           onSlideChange={() => console.log("slide change")}
           autoplay={{

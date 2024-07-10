@@ -14,6 +14,7 @@ function Header() {
       <div className="flex items-center justify-between space-x-8 md:space-x-6 lg:space-x-8 ">
         <div>
           <Image
+            className="w-full h-auto"
             src="/hero_section/nav_left_1.png"
             alt="icon"
             width={80}
@@ -22,6 +23,7 @@ function Header() {
         </div>
         <div>
           <Image
+            className="w=full h-auto"
             src="/hero_section/zimo_logo_2.png"
             alt="icon"
             width={184.9}
@@ -35,6 +37,7 @@ function Header() {
       {/* center  */}
       <div>
         <Image
+          className=" h-auto w-auto hidden md:block"
           src="/hero_section/center_logo.png"
           alt="icon"
           width={204.38}
@@ -42,7 +45,7 @@ function Header() {
         />
       </div>
       {/* right  */}
-      <div className="hidden md:flex justify-between items-center space-x-8">
+      <div className="hidden md:flex justify-between h-auto items-center space-x-8">
         <div>
           <Image
             src="/hero_section/date_time_location.png"

@@ -3,7 +3,7 @@ import React from "react";
 function Global_Section() {
   return (
     <div
-      className="relative h-screen w-full bg-cover bg-center flex justify-center items-center"
+      className="relative h-screen w-full bg-cover bg-center flex justify-center items-center overflow-hidden"
       style={{ backgroundImage: `url("/sixth_section/global.png")` }}
     >
       <div className="text-center">

@@ -10,7 +10,7 @@ function Forth_section() {
   return (
     <div
       // refs
-      className="relative h-screen w-full bg-white bg-cover bg-center"
+      className="relative h-screen w-full bg-white bg-cover bg-center overflow-hidden"
     >
       <div className="absolute h-screen flex justify-between itmes-center left-12 right-12">
         <motion.div

@@ -48,7 +48,7 @@ const Hero = ({ scrollToAboutUs }) => {
         </motion.div>
         <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-16">
           <p
-            className="text-xs md:text-sm font-sans  tracking-tighter md:tracking-widest"
+            className="text-xs text-center md:text-sm font-sans  tracking-tighter md:tracking-widest"
             style={{ color: "#707070" }}
           >
             BRINGING THE WORLD CLOSER TOGETHER
@@ -61,7 +61,7 @@ const Hero = ({ scrollToAboutUs }) => {
           onHoverEnd={() => setIsHovered(false)}
           onClick={scrollToAboutUs}
           transition={{ duration: 1, repeat: Infinity, ease: "easeOut" }}
-          className="absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-6"
+          className="absolute bottom-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mb-6"
         >
           <Image
             src="/hero_section/down_path.png"

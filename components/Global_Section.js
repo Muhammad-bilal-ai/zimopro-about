@@ -8,7 +8,7 @@ function Global_Section() {
     >
       <div className="text-center">
         <h1 className="font-semibold text-2xl py-4">GLOBAL VISION</h1>
-        <p className="text-slate-600 text-sm py-4 whitespace-nowrap word-spacing tracking-wider">
+        <p className="text-slate-600 text-sm py-4 whitespace-nowrap word-spacing tracking-tighter md:tracking-wider">
           WITH A REMOTE CULTURE, DIVERSITY IS NATURALLY IN OUR DNA
         </p>
         <p className="text-slate-600 text-sm">

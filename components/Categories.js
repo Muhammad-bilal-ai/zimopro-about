@@ -6,8 +6,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import SwiperCore, { Navigation, Autoplay } from "swiper";
-SwiperCore.use([Navigation, Autoplay]);
+import { Zoom, Navigation, Pagination } from "swiper/modules";
 const categories = forwardRef((props, ref) => {
   const categoriesRef = useRef(null);
   const isInView = useInView(categoriesRef, {
@@ -55,11 +54,20 @@ const categories = forwardRef((props, ref) => {
         </div> */}
       </motion.div>
       {/* carousel */}
-      <motion.div className="absolute mt-36 max-w-screen-2xl left-16 right-12">
+      <motion.div className="absolute mt-12 md:mt-36 max-w-screen-2xl left-16 right-12 ">
         <Swiper
+          style={{
+            "--swiper-navigation-color": "blue",
+          }}
           spaceBetween={50}
           slidesPerView={4}
           breakpoints={{
+            320: {
+              slidesPerView: 1,
+            },
+            480: {
+              slidesPerView: 1,
+            },
             640: {
               slidesPerView: 1,
             },
@@ -72,6 +80,10 @@ const categories = forwardRef((props, ref) => {
               spaceBetween: 50,
             },
             1280: {
+              slidesPerView: 4,
+              spaceBetween: 50,
+            },
+            1536: {
               slidesPerView: 4,
               spaceBetween: 50,
             },
@@ -165,10 +177,10 @@ const categories = forwardRef((props, ref) => {
           </SwiperSlide>
         </Swiper>
       </motion.div>
-      <motion.div className=" absolute text-slate-900 text-3xl word-spacing font-semibold bottom-0 tracking-widest left-1/2  transform -translate-x-1/2 -translate-y-1/2 pb-20">
+      <motion.div className=" absolute text-slate-900 xs:text-xs sm:text-xl text-center py-4 md:text-2xl lg:text-3xl word-spacing font-semibold bottom-0 tracking-widest left-1/2  transform -translate-x-1/2 -translate-y-1/2 pb-20">
         ONE PLATFORM FOR ALL PREMIUM LISTINGS
       </motion.div>
-      <motion.div className=" absolute text-slate-900 text-2xl word-spacing tracking-widest font-semibold bottom-0 left-1/2  transform -translate-x-1/2 -translate-y-1/2 pb-8">
+      <motion.div className=" absolute text-slate-900 py-4 text-sm md:text-2xl word-spacing tracking-widest font-semibold bottom-0 left-1/2  transform -translate-x-1/2 -translate-y-1/2 pb-8">
         UNLIMITED POTENTIAL
       </motion.div>
     </div>

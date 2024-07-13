@@ -1,12 +1,16 @@
 import React, { forwardRef, useRef } from "react";
 import Image from "next/image";
 import { motion, useInView } from "framer-motion";
+// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
 import "swiper/css";
-import "swiper/css/navigation";
 import "swiper/css/pagination";
-import "swiper/css/scrollbar";
-import { Zoom, Navigation, Pagination } from "swiper/modules";
+import "swiper/css/navigation";
+
+// import required modules
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 const categories = forwardRef((props, ref) => {
   const categoriesRef = useRef(null);
   const isInView = useInView(categoriesRef, {
@@ -56,9 +60,16 @@ const categories = forwardRef((props, ref) => {
       {/* carousel */}
       <motion.div className="absolute mt-12 md:mt-36 max-w-screen-2xl left-16 right-12 ">
         <Swiper
-          style={{
-            "--swiper-navigation-color": "blue",
+          // centeredSlides={true}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
           }}
+          // pagination={{
+          //   clickable: true,
+          // }}
+          navigation={true}
+          modules={[Autoplay, Pagination, Navigation]}
           spaceBetween={50}
           slidesPerView={4}
           breakpoints={{
@@ -90,10 +101,6 @@ const categories = forwardRef((props, ref) => {
           }}
           onSwiper={(swiper) => console.log(swiper)}
           onSlideChange={() => console.log("slide change")}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
         >
           <SwiperSlide>
             <div className="px-4">
@@ -177,7 +184,7 @@ const categories = forwardRef((props, ref) => {
           </SwiperSlide>
         </Swiper>
       </motion.div>
-      <motion.div className=" absolute text-slate-900 xs:text-xs sm:text-xl text-center py-4 md:text-2xl lg:text-3xl word-spacing font-semibold bottom-0 tracking-widest left-1/2  transform -translate-x-1/2 -translate-y-1/2 pb-20">
+      <motion.div className=" absolute text-slate-900 text-xl text-center py-4 md:text-2xl lg:text-3xl word-spacing font-semibold bottom-0 tracking-widest left-1/2  transform -translate-x-1/2 -translate-y-1/2 pb-20">
         ONE PLATFORM FOR ALL PREMIUM LISTINGS
       </motion.div>
       <motion.div className=" absolute text-slate-900 py-4 text-sm md:text-2xl word-spacing tracking-widest font-semibold bottom-0 left-1/2  transform -translate-x-1/2 -translate-y-1/2 pb-8">

@@ -17,7 +17,7 @@ const AboutUs = forwardRef(({ scrollToCategories }, ref) => {
       className="relative flex h-screen w-full bg-white overflow-hidden"
     >
       {/* top text */}
-      <div className="absolute text-xs text-center md:text-lg left-1/2 transform -translate-x-1/2 -transalte-y-1/2 text-slate-700 font-sans font-semibold mt-8 overflow-hidden">
+      <div className="absolute text-base text-center md:word-spacing md:tracking-wider md:text-lg left-1/2 transform -translate-x-1/2 -transalte-y-1/2 text-slate-700 font-sans mt-8 overflow-hidden">
         A REAL ESTATE AND PROPERTY PLATFORM THAT IS CHANGING THE WORLD
       </div>
       {/* first aside in the left */}
@@ -52,15 +52,16 @@ const AboutUs = forwardRef(({ scrollToCategories }, ref) => {
         transition={{ duration: 2 }}
         className="absolute top-1/3 right-0 px-8 pb-16 py-16 md:py-0"
       >
-        <div className="hidden md:block w-auto h-auto">
+        <div className="">
           <Image
             src="/AboutUs_Section/logo_4.png"
             alt="down_path"
             width={589.6}
             height={0}
+            className="w-120"
           />
         </div>
-        <div className="text-slate-700 font-sans font-semibold mt-8 text-center text-xs md:text-lg md:block sm:mt-16">
+        <div className="text-slate-700 font-sans font-semibold mt-8 md:word-spacing text-center text-xs md:text-lg md:block sm:mt-16">
           <p className="mt-2">CONNECTING USERS FROM ACROSS THE GLOBE</p>
           <p className="mt-2">TO FACILITATE LIFE'S MOST IMPORTANT</p>
           <p className="mt-2">PERSONAL TRANSACTIONS</p>

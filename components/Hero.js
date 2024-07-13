@@ -23,7 +23,7 @@ const Hero = ({ scrollToAboutUs }) => {
           <button className="relative w-16 h-16 sm:w-12 sm:h-12 md:w-40 md:h-40">
             {" "}
             <Image
-              className=" h-auto"
+              className=" md:w-20"
               src="/hero_section/back_arrow.png"
               alt="icon"
               width={99}
@@ -38,11 +38,16 @@ const Hero = ({ scrollToAboutUs }) => {
           transition={{ duration: 0.5 }}
           className="absolute flex flex-col justify-center items-start text-white font-sans top-1/2 transform -translate-y-1/2 left-12 sm:left-2 md:left-12 tracking-wider"
         >
-          <h1 className="sm:text-sm: md:text-lg tracking-wider">DISCOVER</h1>{" "}
-          <p className="sm:text-sm md:text-5xl  tracking-wider py-2">
+          <h1 className="sm:text-xl: md:text-3xl tracking-widest word-spacing">
+            DISCOVER
+          </h1>{" "}
+          <p className="text-2xl md:text-6xl  tracking-widest py-2">
             A NEW WORLD
           </p>
-          <p className="text-xs md:text-sm py-2" style={{ color: "#707070" }}>
+          <p
+            className="text-sm md:text-base tracking-widest py-2"
+            style={{ color: "#707070" }}
+          >
             FOR THOSE WHO WISH FOR MORE...
           </p>
         </motion.div>

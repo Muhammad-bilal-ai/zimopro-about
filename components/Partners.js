@@ -4,8 +4,8 @@ import React from "react";
 function Partners() {
   return (
     <div className="relative w-screen h-screen bg-cover bg-center bg-white">
-      <div className="absolute inset-0 flex flex-row items-center justify-center left-12 sm:left-16 md:left-12 space-x-64">
-        <div className="flex flex-col p-4 m-2">
+      <div className="absolute inset-0 flex flex-col md:flex-row space-y-6 md:space-x-6 p-6 justify-center items-center w-full h-screen top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <div className="flex flex-col items-center">
           <div>
             {" "}
             <Image

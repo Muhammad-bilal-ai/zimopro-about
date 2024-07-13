@@ -17,7 +17,7 @@ const AboutUs = forwardRef(({ scrollToCategories }, ref) => {
       className="relative flex h-screen w-full bg-white overflow-hidden"
     >
       {/* top text */}
-      <div className="absolute text-base text-center md:word-spacing md:tracking-wider md:text-lg left-1/2 transform -translate-x-1/2 -transalte-y-1/2 text-slate-700 font-sans mt-8 overflow-hidden">
+      <div className="absolute text-sm text-center md:word-spacing md:tracking-wider md:text-lg left-1/2 transform -translate-x-1/2 -transalte-y-1/2 text-slate-700 font-sans mt-4 md:mt-8 overflow-hidden">
         A REAL ESTATE AND PROPERTY PLATFORM THAT IS CHANGING THE WORLD
       </div>
       {/* first aside in the left */}
@@ -29,17 +29,17 @@ const AboutUs = forwardRef(({ scrollToCategories }, ref) => {
             : { opacity: 0, x: -200, y: -200 }
         }
         transition={{ duration: 2 }}
-        className="absolute top-1/4 flex flex-col justify-between left-4 md:left-12 py-2 text-slate-700 font-sans font-semibold tracking-wider text-center md:text-left"
+        className="absolute top-1/4 flex flex-col justify-between left-16  md:left-12 py-2 text-slate-700 font-sans font-semibold tracking-wider text-center md:text-left"
       >
         <div>
           <p className="text-sm md:text-xl word-spacing">
             A REVOLUTIONARY PLATFORM
           </p>
         </div>
-        <div className="text-xl md:text-4xl md:tracking-normal word-spacing">
+        <div className="text-sm md:text-4xl md:tracking-normal word-spacing">
           ENTRIES - SELLERS
         </div>
-        <div className="text-2xl md:text-5xl md:word-spacing tracking-widest md:tracking-wider">
+        <div className="text-xl md:text-5xl md:word-spacing tracking-widest md:tracking-wider">
           WORLDWIDE
         </div>
       </motion.aside>
@@ -58,13 +58,13 @@ const AboutUs = forwardRef(({ scrollToCategories }, ref) => {
             alt="down_path"
             width={589.6}
             height={0}
-            className="w-120"
+            className="w-48 md:w-96"
           />
         </div>
-        <div className="text-slate-700 font-sans font-semibold mt-8 md:word-spacing text-center text-xs md:text-lg md:block sm:mt-16">
-          <p className="mt-2">CONNECTING USERS FROM ACROSS THE GLOBE</p>
-          <p className="mt-2">TO FACILITATE LIFE'S MOST IMPORTANT</p>
-          <p className="mt-2">PERSONAL TRANSACTIONS</p>
+        <div className="text-slate-700 font-sans font-semibold mt-2 md:mt-8 md:word-spacing text-center text-xs md:text-lg md:block sm:mt-16">
+          <p className="mt-1 md:mt-2">CONNECTING USERS FROM ACROSS THE GLOBE</p>
+          <p className="mt-1 md:mt-2">TO FACILITATE LIFE'S MOST IMPORTANT</p>
+          <p className="mt-1 md:mt-2">PERSONAL TRANSACTIONS</p>
         </div>
       </motion.aside>
       {/* 3rd aside in the left */}

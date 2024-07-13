@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-function Fifth_Section() {
+function Personalized() {
   return (
     <div
       className="relative h-screen bg-cover bg-center overflow-hidden"
@@ -22,9 +22,9 @@ function Fifth_Section() {
         </p>
       </div>
       <div className="absolute container space-y-16 md:space-y-0 flex flex-col  md:space-x-8 md:flex-row items-center top-1/2 transform -translate-y-1/2 p-4 md:p-12">
-        <div className="flex-1 flex md:justify-start w-1/2">
+        <div className="flex justify-normal md:justify-start w-1/2">
           <Image
-            className="w-full h-auto"
+            className=""
             src="/fifth_section/logo.png"
             alt="logo icon"
             width={547.74}
@@ -32,10 +32,11 @@ function Fifth_Section() {
           />
         </div>
 
-        <div className="flex-1 flex md:justify-end space-x-2 text-white word-spacing w-1/2 pt-8">
-          <span className="text-sm md:text-base">CREATE USER ID</span>
+        <div className="flex justify-normal md:justify-end space-x-2 text-white word-spacing w-1/2 pt-8">
+          <span className="text-base md:text-base text-nowrap">
+            CREATE USER ID
+          </span>
           <Image
-            className="w-fit h-fit"
             src="/fifth_section/arrow.png"
             alt="logo icon"
             width={44.87}
@@ -47,4 +48,4 @@ function Fifth_Section() {
   );
 }
 
-export default Fifth_Section;
+export default Personalized;

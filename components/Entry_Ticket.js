@@ -2,7 +2,7 @@ import Image from "next/image";
 import React, { useRef } from "react";
 import { motion, useInView, ref } from "framer-motion";
 
-function Forth_section() {
+function Entry_Ticket() {
   const isInView = useInView({
     triggerOnce: true,
     threshold: 1,
@@ -21,26 +21,26 @@ function Forth_section() {
           //     : { opacity: 0, x: -200, y: 0 }
           // }
           // transition={{ duration: 2 }}
-          className="flex-1 flex flex-col justify-center w-1/2"
+          className="flex-1 flex flex-col justify-center"
         >
           <Image
-            className="w-full h-auto"
             src="/forth_section/zimo_logo.png"
             alt="zimo logo"
             width={565}
-            height={152}
+            height={0}
+            className="w-66 md:w-70 lg:w-78"
           />
-          <h1 className="text-2xl md:text-4xl text-slate-700 font-sans tracking-widest word-spacing mt-8">
+          <h1 className="text-3xl text-center md:text-start md:text-4xl text-slate-700 font-sans tracking-widest word-spacing mt-8">
             ONE SOURCE
           </h1>
-          <p className="text-2xl md:text-4xl font-sans font-semibold text-slate-800 tracking-widest word-spacing py-2">
+          <p className="text-2xl text-center md:text-start md:text-4xl font-sans font-semibold text-slate-800 tracking-widest word-spacing py-1 md:py-2">
             ENTRY TICKETS
           </p>
-          <p className="text-xs md:text-sm font-sans text-slate-400 tracking-widest word-spacing py-2">
+          <p className="text-sm text-center md:text-start md:text-base font-sans text-slate-400 tracking-widest word-spacing py-1 md:py-2">
             FOR ALL PREMIUM LISTINGS
           </p>
         </motion.div>
-        <div className="flex-1 flex flex-col justify-center w-1/2">
+        <div className="flex-1 flex flex-col justify-center">
           <Image
             className="w-full h-auto"
             src="/forth_section/image_1.png"
@@ -57,4 +57,4 @@ function Forth_section() {
   );
 }
 
-export default Forth_section;
+export default Entry_Ticket;

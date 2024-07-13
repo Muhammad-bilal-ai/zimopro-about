@@ -1,6 +1,6 @@
 import React from "react";
 
-function Final_Section() {
+function Yacht_Section() {
   return (
     <div
       className="relative h-screen w-full bg-cover bg-center overflow-hidden"
@@ -9,4 +9,4 @@ function Final_Section() {
   );
 }
 
-export default Final_Section;
+export default Yacht_Section;

@@ -3,14 +3,14 @@ import { Inter } from "next/font/google";
 import Hero from "@/components/Hero";
 import AboutUs from "@/components/AboutUs";
 import Categories from "@/components/Categories";
-import Forth_section from "@/components/Forth_Section";
-import Fifth_Section from "@/components/Fifth_Section";
 import Global_Section from "@/components/Global_Section";
 import Partners from "@/components/Partners";
-import Final_Section from "@/components/Final_Section";
-import Final_Section_2 from "@/components/Final_Section_2";
 const inter = Inter({ subsets: ["latin"] });
 import { useRef } from "react";
+import Personalized from "@/components/Personalized";
+import Entry_Ticket from "@/components/Entry_Ticket";
+import Yacht_Section from "@/components/Yacht_Section";
+import Car_Section from "@/components/Car_Section";
 
 export default function Home() {
   const aboutUsRef = useRef(null);
@@ -26,12 +26,12 @@ export default function Home() {
       <Hero scrollToAboutUs={scrollToAboutUs} />
       <AboutUs ref={aboutUsRef} scrollToCategories={scrollToCategories} />
       <Categories ref={categoriesRef} />
-      <Forth_section />
-      <Fifth_Section />
+      <Entry_Ticket />
+      <Personalized />
       <Global_Section />
       <Partners />
-      <Final_Section />
-      <Final_Section_2 />
+      <Yacht_Section />
+      <Car_Section />
     </div>
   );
 }

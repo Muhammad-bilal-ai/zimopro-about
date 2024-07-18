@@ -1,0 +1,36 @@
+{
+  "header": {
+    "ABOUT": "О НАС"
+  },
+  "Hero": {
+    "BACK": "НАЗАД",
+    "DISCOVER": "ИССЛЕДУЙТЕ",
+    "A NEW WORLD": "НОВЫЙ МИР",
+    "FOR THOSE WHO WISH FOR MORE...": "ДЛЯ ТЕХ, КТО ХОЧЕТ БОЛЬШЕ...",
+    "BRINGING THE WORLD CLOSER TOGATHER": "СБЛИЖЕНИЕ МИРА ВМЕСТЕ"
+  },
+  "AboutUs": {
+    "A REAL ESTATE AND PROPERTY PLATFORM THAT IS CHANGING THE WORLD": "ПЛАТФОРМА НЕДВИЖИМОСТИ, КОТОРАЯ МЕНЯЕТ МИР",
+    "A REVOLUTIONARY PLATFORM": "РЕВОЛЮЦИОННАЯ ПЛАТФОРМА",
+    "ENTRIES - SELLERS": "ПРЕДЛОЖЕНИЯ - ПРОДАВЦЫ",
+    "WORLDWIDE": "ПО ВСЕМУ МИРУ",
+    "CONNECTING USERS FROM ACROSS THE GLOBE": "СОЕДИНЯЕМ ПОЛЬЗОВАТЕЛЕЙ СО ВСЕГО МИРА",
+    "TO FACILITATE LIFE'S MOST IMPORTANT": "ДЛЯ СОДЕЙСТВИЯ НАИБОЛЕЕ ВАЖНЫМ МОМЕНТАМ ЖИЗНИ",
+    "PERSONAL TRANSACTIONS": "ЛИЧНЫЕ СДЕЛКИ",
+    "A COMBINATION OF AUTOMATION AND MANUAL CURATION OUR PRO AGENTS AND": "СОЧЕТАНИЕ АВТОМАТИЗАЦИИ И РУЧНОЙ КУРАТОРСКОЙ РАБОТЫ НАШИМИ ПРОФЕССИОНАЛЬНЫМИ АГЕНТАМИ И",
+    "MODURATION TEAM SELECTS THE HIGHEST QUALITY LISTINGS ON THE MARKET": "КОМАНДА МОДЕРАЦИИ ВЫБИРАЕТ НАИБОЛЕЕ КАЧЕСТВЕННЫЕ ПРЕДЛОЖЕНИЯ НА РЫНКЕ",
+    "FROM ACCROSS THE WORLD": "СО ВСЕГО МИРА"
+  },
+  "Categories": {
+    "title": "Наши Услуги",
+    "description": "Мы предлагаем широкий спектр услуг, чтобы удовлетворить ваши потребности."
+  },
+  "Entry_Ticket": {
+    "title": "Свяжитесь с Нами",
+    "description": "Свяжитесь с нами для получения дополнительной информации."
+  },
+  "Personalized": {
+    "title": "Свяжитесь с Нами",
+    "description": "Свяжитесь с нами для получения дополнительной информации."
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "header": {
+    "ABOUT": "关于我们"
+  },
+  "Hero": {
+    "BACK": "返回",
+    "DISCOVER": "发现",
+    "A NEW WORLD": "一个新世界",
+    "FOR THOSE WHO WISH FOR MORE...": "为那些希望得到更多的人...",
+    "BRINGING THE WORLD CLOSER TOGATHER": "让世界更加紧密"
+  },
+  "AboutUs": {
+    "A REAL ESTATE AND PROPERTY PLATFORM THAT IS CHANGING THE WORLD": "一个正在改变世界的房地产和物业平台",
+    "A REVOLUTIONARY PLATFORM": "一个革命性的平台",
+    "ENTRIES - SELLERS": "条目 - 卖家",
+    "WORLDWIDE": "全球",
+    "CONNECTING USERS FROM ACROSS THE GLOBE": "连接全球的用户",
+    "TO FACILITATE LIFE'S MOST IMPORTANT": "为了促进生命中最重要的",
+    "PERSONAL TRANSACTIONS": "个人交易",
+    "A COMBINATION OF AUTOMATION AND MANUAL CURATION OUR PRO AGENTS AND": "我们的专业代理和人工审核的结合",
+    "MODURATION TEAM SELECTS THE HIGHEST QUALITY LISTINGS ON THE MARKET": "审核团队选择市场上最高质量的房源",
+    "FROM ACCROSS THE WORLD": "来自世界各地"
+  },
+  "Categories": {
+    "title": "我们的服务",
+    "description": "我们提供一系列服务以满足您的需求。"
+  },
+  "Entry_Ticket": {
+    "title": "联系我们",
+    "description": "联系我们以获取更多信息。"
+  },
+  "Personalized": {
+    "title": "联系我们",
+    "description": "联系我们以获取更多信息。"
+  }
+}

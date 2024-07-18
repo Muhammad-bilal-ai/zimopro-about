@@ -1,5 +1,5 @@
 // next.config.mjs
-
+import { i18n } from "./next-i18next.config.mjs";
 const nextConfig = {
   reactStrictMode: true,
   webpack(config) {
@@ -10,6 +10,7 @@ const nextConfig = {
 
     return config;
   },
+  i18n,
 };
 
 export default nextConfig;

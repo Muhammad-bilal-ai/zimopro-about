@@ -1,8 +1,13 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { useRouter } from "next/router";
 
 function Header() {
+  const { locale, locales, push } = useRouter();
+  const handleClick = () => {
+    push("/");
+  };
   return (
     <motion.header
       initial={{ opacity: 0, y: -100 }}
@@ -56,6 +61,7 @@ function Header() {
             height={0}
             className="w-24 md:w-36 lg:w-44"
           />
+
           <Image
             src="/hero_section/flag.png"
             alt="icon"

@@ -2,8 +2,11 @@ import Image from "next/image";
 import Header from "./header";
 import { color, motion } from "framer-motion";
 import { useState } from "react";
+import { useTranslation } from "next-i18next";
 
 const Hero = ({ scrollToAboutUs }) => {
+  const { t } = useTranslation("common");
+  console.log(t("A NEW WORLD"));
   const [isHovered, setIsHovered] = useState(false);
   return (
     <div
@@ -39,16 +42,16 @@ const Hero = ({ scrollToAboutUs }) => {
           className="absolute flex flex-col justify-center items-start text-white font-sans top-1/2 transform -translate-y-1/2 left-12 sm:left-2 md:left-12 tracking-wider"
         >
           <h1 className="sm:text-xl: md:text-3xl tracking-widest word-spacing">
-            DISCOVER
+            {t("DISCOVER")}
           </h1>{" "}
           <p className="text-2xl md:text-6xl  tracking-widest py-2">
-            A NEW WORLD
+            {t("A NEW WORLD")}
           </p>
           <p
             className="text-sm md:text-base tracking-widest py-2"
             style={{ color: "#707070" }}
           >
-            FOR THOSE WHO WISH FOR MORE...
+            {t("FOR THOSE WHO WISH FOR MORE...")}
           </p>
         </motion.div>
         <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-16">
@@ -56,7 +59,7 @@ const Hero = ({ scrollToAboutUs }) => {
             className="text-xs text-center md:text-sm font-sans  tracking-tighter md:tracking-widest"
             style={{ color: "#707070" }}
           >
-            BRINGING THE WORLD CLOSER TOGETHER
+            {t("BRINGING THE WORLD CLOSER TOGETHER")}
           </p>
         </div>
         <motion.div

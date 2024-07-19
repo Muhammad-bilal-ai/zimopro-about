@@ -1,36 +1,18 @@
 {
-  "header": {
-    "ABOUT": "ہمارے بارے میں"
-  },
-  "Hero": {
-    "BACK": "واپس",
-    "DISCOVER": "دریافت کریں",
-    "A NEW WORLD": "ایک نئی دنیا",
-    "FOR THOSE WHO WISH FOR MORE...": "ان لوگوں کے لئے جو زیادہ کی خواہش رکھتے ہیں...",
-    "BRINGING THE WORLD CLOSER TOGATHER": "دنیا کو قریب لا رہے ہیں"
-  },
-  "AboutUs": {
-    "A REAL ESTATE AND PROPERTY PLATFORM THAT IS CHANGING THE WORLD": "ایک ایسی جائیداد اور پراپرٹی پلیٹ فارم جو دنیا کو بدل رہا ہے",
-    "A REVOLUTIONARY PLATFORM": "ایک انقلابی پلیٹ فارم",
-    "ENTRIES - SELLERS": "اندراجات - بیچنے والے",
-    "WORLDWIDE": "دنیا بھر میں",
-    "CONNECTING USERS FROM ACROSS THE GLOBE": "دنیا بھر کے صارفین کو جوڑنا",
-    "TO FACILITATE LIFE'S MOST IMPORTANT": "زندگی کے سب سے اہم لمحات کو آسان بنانا",
-    "PERSONAL TRANSACTIONS": "ذاتی لین دین",
-    "A COMBINATION OF AUTOMATION AND MANUAL CURATION OUR PRO AGENTS AND": "آٹومیشن اور دستی انتخاب کا مجموعہ ہمارے پیشہ ور ایجنٹس اور",
-    "MODURATION TEAM SELECTS THE HIGHEST QUALITY LISTINGS ON THE MARKET": "مناسب ٹیم مارکیٹ پر سب سے اعلیٰ معیار کی فہرستیں منتخب کرتی ہے",
-    "FROM ACCROSS THE WORLD": "دنیا بھر سے"
-  },
-  "Categories": {
-    "title": "ہماری خدمات",
-    "description": "ہم آپ کی ضروریات کو پورا کرنے کے لئے خدمات کی ایک رینج پیش کرتے ہیں۔"
-  },
-  "Entry_Ticket": {
-    "title": "ہم سے رابطہ کریں",
-    "description": "مزید معلومات کے لئے ہم سے رابطہ کریں۔"
-  },
-  "Personalized": {
-    "title": "ہم سے رابطہ کریں",
-    "description": "مزید معلومات کے لئے ہم سے رابطہ کریں۔"
-  }
+  "ABOUT": "ہمارے بارے میں",
+  "BACK": "واپس",
+  "DISCOVER": "دریافت کریں",
+  "A NEW WORLD": "ایک نئی دنیا",
+  "FOR THOSE WHO WISH FOR MORE...": "ان لوگوں کے لئے جو زیادہ کی خواہش رکھتے ہیں...",
+  "BRINGING THE WORLD CLOSER TOGATHER": "دنیا کو قریب لا رہے ہیں",
+  "A REAL ESTATE AND PROPERTY PLATFORM THAT IS CHANGING THE WORLD": "ایک ایسی جائیداد اور پراپرٹی پلیٹ فارم جو دنیا کو بدل رہا ہے",
+  "A REVOLUTIONARY PLATFORM": "ایک انقلابی پلیٹ فارم",
+  "ENTRIES - SELLERS": "اندراجات - بیچنے والے",
+  "WORLDWIDE": "دنیا بھر میں",
+  "CONNECTING USERS FROM ACROSS THE GLOBE": "دنیا بھر کے صارفین کو جوڑنا",
+  "TO FACILITATE LIFE'S MOST IMPORTANT": "زندگی کے سب سے اہم لمحات کو آسان بنانا",
+  "PERSONAL TRANSACTIONS": "ذاتی لین دین",
+  "A COMBINATION OF AUTOMATION AND MANUAL CURATION OUR PRO AGENTS AND": "آٹومیشن اور دستی انتخاب کا مجموعہ ہمارے پیشہ ور ایجنٹس اور",
+  "MODURATION TEAM SELECTS THE HIGHEST QUALITY LISTINGS ON THE MARKET": "مناسب ٹیم مارکیٹ پر سب سے اعلیٰ معیار کی فہرستیں منتخب کرتی ہے",
+  "FROM ACCROSS THE WORLD": "دنیا بھر سے"
 }

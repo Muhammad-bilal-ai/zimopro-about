@@ -2,12 +2,12 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { useRouter } from "next/router";
+import { useTranslation } from "react-i18next";
+import { serverSideTranslations } from "next-i18next";
+import LanguageSwitcher from "../components/LanguageSwitcher";
 
 function Header() {
-  const { locale, locales, push } = useRouter();
-  const handleClick = () => {
-    push("/");
-  };
+  const { t } = useTranslation("common");
   return (
     <motion.header
       initial={{ opacity: 0, y: -100 }}
@@ -36,7 +36,7 @@ function Header() {
           />
         </div>
         <div className="text-white font-sans text-xs md:text-base pt-2 md:pt-4">
-          ABOUT
+          {t("ABOUT")}
         </div>
       </div>
 
@@ -69,6 +69,7 @@ function Header() {
             height={0}
             className="w-4 md:w-6 lg:w-8"
           />
+          <LanguageSwitcher />
         </div>
         <div className="flex-shrink-0">
           <Image

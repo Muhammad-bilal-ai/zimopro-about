@@ -1,23 +1,21 @@
-// components/LanguageSwitcher.js
-
-import { useRouter } from "next/router";
+import { useTranslation } from "react-i18next";
 
 const LanguageSwitcher = () => {
-  const router = useRouter();
-  const { locale, locales } = router;
+  const { i18n } = useTranslation();
 
-  const changeLanguage = (e) => {
-    const selectedLocale = e.target.value;
-    router.push(router.pathname, router.asPath, { locale: selectedLocale });
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
   };
 
   return (
-    <select value={locale} onChange={changeLanguage}>
-      {locales.map((lng) => (
-        <option key={lng} value={lng}>
-          {lng.toUpperCase()}
-        </option>
-      ))}
+    <select
+      onChange={(e) => changeLanguage(e.target.value)}
+      value={i18n.language}
+    >
+      <option value="en">English</option>
+      <option value="zh">中文</option>
+      <option value="ur">اردو</option>
+      <option value="ru">Русский</option>
     </select>
   );
 };

@@ -59,7 +59,7 @@ const Hero = ({ scrollToAboutUs }) => {
             className="text-xs text-center md:text-sm font-sans  tracking-tighter md:tracking-widest"
             style={{ color: "#707070" }}
           >
-            {t("BRINGING THE WORLD CLOSER TOGETHER")}
+            {t("BRINGING THE WORLD CLOSER TOGATHER")}
           </p>
         </div>
         <motion.div

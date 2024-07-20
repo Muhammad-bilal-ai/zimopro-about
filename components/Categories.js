@@ -11,7 +11,9 @@ import "swiper/css/navigation";
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import { useTranslation } from "react-i18next";
 const categories = forwardRef((props, ref) => {
+  const { t } = useTranslation("common");
   const categoriesRef = useRef(null);
   const isInView = useInView(categoriesRef, {
     triggerOnce: true,
@@ -41,7 +43,7 @@ const categories = forwardRef((props, ref) => {
         >
           {/* upper screen text and arrow buttons */}
           <div className="flex text-slate-700 text-2xl items-center md:text-3xl font-semibold md:py-4 tracking-wider text-nowrap">
-            <h1>OUR CATEGORIES</h1>
+            <h1>{t("OUR CATEGORIES")}</h1>
           </div>
           <div className="flex space-x-8 md:space-x-16">
             <button className="arrow-left arrow">
@@ -191,10 +193,10 @@ const categories = forwardRef((props, ref) => {
           </Swiper>
         </motion.div>
         <motion.div className=" absolute text-slate-900 text-sm text-center  md:text-xl font-semibold bottom-0 tracking-widest left-1/2  transform -translate-x-1/2 -translate-y-1/2 pb2">
-          ONE PLATFORM FOR ALL PREMIUM LISTINGS
+          {t("ONE PLATFORM FOR ALL PREMIUM LISTINGS")}
         </motion.div>
         <motion.div className=" absolute text-slate-900 text-sm md:text-2xl tracking-widest font-semibold bottom-0 left-1/2  transform -translate-x-1/2 -translate-y-1/2 pb-4">
-          UNLIMITED POTENTIAL
+          {t("UNLIMITED POTENTIAL")}
         </motion.div>
       </div>
     </div>

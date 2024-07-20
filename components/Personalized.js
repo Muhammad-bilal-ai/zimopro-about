@@ -1,7 +1,9 @@
 import Image from "next/image";
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 function Personalized() {
+  const { t } = useTranslation("common");
   return (
     <div
       className="relative h-screen bg-cover bg-center overflow-hidden"
@@ -9,16 +11,16 @@ function Personalized() {
     >
       <div className="absolute text-white text-center right-0 p-16 whitespace-nowrap">
         <h1 className="font-semibold text-xl md:text-2xl pb-4 md:text-left">
-          PERSONALISED FOR YOU
+          {t("PERSONALISED FOR YOU")}
         </h1>
         <p className="text-slate-400 md:text-left text-xs md:text-base word-spacing tracking-wide">
-          DELIVERING THOUSANDS OF PERSONALISED ALERTS
+          {t("DELIVERING THOUSANDS OF PERSONALISED ALERTS")}
         </p>
         <p className="text-slate-400 md:text-left text-xs md:text-base tracking-wider">
-          EVERYDAY, OUR USERS CAN BE FIRST IN LINE WHEN
+          {t("EVERYDAY, OUR USERS CAN BE FIRST IN LINE WHEN")}
         </p>
         <p className="text-slate-400 text-xs md:text-base text-left">
-          THAT OPPURTUNITY OF A LIFETIME IS HERE
+          {t("THAT OPPURTUNITY OF A LIFETIME IS HERE")}
         </p>
       </div>
       <div className="absolute container space-y-16 md:space-y-0 flex flex-col  md:space-x-8 md:flex-row items-center top-1/2 transform -translate-y-1/2 p-4 md:p-12">
@@ -34,7 +36,7 @@ function Personalized() {
 
         <div className="flex justify-normal md:justify-end space-x-2 text-white word-spacing w-1/2 pt-8">
           <span className="text-base md:text-base text-nowrap">
-            CREATE USER ID
+            {t("CREATE USER ID")}
           </span>
           <Image
             src="/fifth_section/arrow.png"

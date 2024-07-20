@@ -1,9 +1,10 @@
-// next.config.mjs
-import { i18n } from "./next-i18next.config.mjs";
-const nextConfig = {
+// next.config.js
+const { i18n } = require("./next-i18next.config");
+
+module.exports = {
   reactStrictMode: true,
   i18n,
-  webpack(config) {
+  webpack: (config) => {
     config.module.rules.push({
       test: /\.svg$/,
       use: ["@svgr/webpack"],
@@ -12,5 +13,3 @@ const nextConfig = {
     return config;
   },
 };
-
-export default nextConfig;

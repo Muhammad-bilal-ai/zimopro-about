@@ -1,8 +1,10 @@
 import Image from "next/image";
 import React, { useRef } from "react";
 import { motion, useInView, ref } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 function Entry_Ticket() {
+  const { t } = useTranslation("common");
   const isInView = useInView({
     triggerOnce: true,
     threshold: 1,
@@ -31,13 +33,13 @@ function Entry_Ticket() {
             className="w-66 md:w-70 lg:w-78"
           />
           <h1 className="text-3xl text-center md:text-start md:text-4xl text-slate-700 font-sans tracking-widest word-spacing mt-8">
-            ONE SOURCE
+            {t("ONE SOURCE")}
           </h1>
           <p className="text-2xl text-center md:text-start md:text-4xl font-sans font-semibold text-slate-800 tracking-widest word-spacing py-1 md:py-2">
-            ENTRY TICKETS
+            {t("ENTRY TICKETS")}
           </p>
           <p className="text-sm text-center md:text-start md:text-base font-sans text-slate-400 tracking-widest word-spacing py-1 md:py-2">
-            FOR ALL PREMIUM LISTINGS
+            {t("FOR ALL PREMIUM LISTINGS")}
           </p>
         </motion.div>
         <div className="flex-1 flex flex-col justify-center">
@@ -49,7 +51,7 @@ function Entry_Ticket() {
             height={718}
           />
           <h1 className="text-2xl md:text-4xl text-slate-700 font-sans tracking-widest word-spacing mt-8 text-center">
-            LET YOUR DREAMS FIND YOU
+            {t("LET YOUR DREAMS FIND YOU")}
           </h1>
         </div>
       </div>

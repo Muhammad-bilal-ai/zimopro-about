@@ -1,18 +1,19 @@
-import i18next from "i18next";
+import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-import { i18n } from "./next-i18next.config.mjs";
+import HttpApi from "i18next-http-backend";
 
-i18next.use(initReactI18next).init({
-  fallbackLng: i18n.defaultLocale,
-  lng: i18n.defaultLocale,
-  ns: ["common"],
-  defaultNS: "common",
-  interpolation: {
-    escapeValue: false,
-  },
-  backend: {
-    loadPath: "/locales/{{lng}}/{{ns}}.json",
-  },
-});
+i18n
+  .use(HttpApi)
+  .use(initReactI18next)
+  .init({
+    fallbackLng: "en",
+    supportedLngs: ["en", "zh", "ur", "ru"],
+    interpolation: {
+      escapeValue: false, // not needed for react as it escapes by default
+    },
+    backend: {
+      loadPath: "/locales/{{lng}}/{{ns}}.json",
+    },
+  });
 
-export default i18next;
+export default i18n;

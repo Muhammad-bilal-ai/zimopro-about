@@ -1,7 +1,9 @@
 import Image from "next/image";
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 function Partners() {
+  const { t } = useTranslation("common");
   return (
     <div className="relative w-screen h-screen bg-cover bg-center bg-white">
       <div className="absolute inset-0 flex flex-col md:flex-row space-y-6 md:space-x-6 p-6 justify-center items-center w-full h-screen top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
@@ -18,7 +20,7 @@ function Partners() {
 
           <div>
             <h1 className=" text-slate-500 pt-8 text-6xl word-spacing tracking-wider">
-              PARTNERS
+              {t("PARTNERS")}
             </h1>
           </div>
         </div>

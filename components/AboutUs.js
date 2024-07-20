@@ -1,7 +1,9 @@
 import React, { forwardRef, useRef, useState } from "react";
 import Image from "next/image";
 import { motion, useInView } from "framer-motion";
+import { useTranslation } from "react-i18next";
 const AboutUs = forwardRef(({ scrollToCategories }, ref) => {
+  const { t } = useTranslation("common");
   const [isHovered, setIsHovered] = useState(false);
   const aboutUsRef = useRef(null);
   const isInView = useInView(aboutUsRef, {
@@ -18,7 +20,7 @@ const AboutUs = forwardRef(({ scrollToCategories }, ref) => {
     >
       {/* top text */}
       <div className="absolute text-sm text-center md:word-spacing md:tracking-wider md:text-lg left-1/2 transform -translate-x-1/2 -transalte-y-1/2 text-slate-700 font-sans mt-4 md:mt-8 overflow-hidden">
-        A REAL ESTATE AND PROPERTY PLATFORM THAT IS CHANGING THE WORLD
+        {t("A REAL ESTATE AND PROPERTY PLATFORM THAT IS CHANGING THE WORLD")}
       </div>
       {/* first aside in the left */}
       <motion.aside
@@ -33,14 +35,14 @@ const AboutUs = forwardRef(({ scrollToCategories }, ref) => {
       >
         <div>
           <p className="text-sm md:text-xl word-spacing">
-            A REVOLUTIONARY PLATFORM
+            {t("A REVOLUTIONARY PLATFORM")}
           </p>
         </div>
         <div className="text-sm md:text-4xl md:tracking-normal word-spacing">
-          ENTRIES - SELLERS
+          {t("ENTRIES - SELLERS")}
         </div>
         <div className="text-xl md:text-5xl md:word-spacing tracking-widest md:tracking-wider">
-          WORLDWIDE
+          {t("WORLDWIDE")}
         </div>
       </motion.aside>
       {/* 2nd aside in the right */}
@@ -62,9 +64,13 @@ const AboutUs = forwardRef(({ scrollToCategories }, ref) => {
           />
         </div>
         <div className="text-slate-700 font-sans font-semibold mt-2 md:mt-8 md:word-spacing text-center text-xs md:text-lg md:block sm:mt-16">
-          <p className="mt-1 md:mt-2">CONNECTING USERS FROM ACROSS THE GLOBE</p>
-          <p className="mt-1 md:mt-2">TO FACILITATE LIFE'S MOST IMPORTANT</p>
-          <p className="mt-1 md:mt-2">PERSONAL TRANSACTIONS</p>
+          <p className="mt-1 md:mt-2">
+            {t("CONNECTING USERS FROM ACROSS THE GLOBE")}
+          </p>
+          <p className="mt-1 md:mt-2">
+            {t("TO FACILITATE LIFE'S MOST IMPORTANT")}
+          </p>
+          <p className="mt-1 md:mt-2">{t("PERSONAL TRANSACTIONS")}</p>
         </div>
       </motion.aside>
       {/* 3rd aside in the left */}
@@ -79,14 +85,18 @@ const AboutUs = forwardRef(({ scrollToCategories }, ref) => {
         className="absolute  top-1/2 left-4 md:left-12 pt-24 md:pt-48 text-center md:text-left text-slate-700 font-sans font-semibold word-spacing tracking-wider"
       >
         <div>
-          <p className="text-sm md:text-xl">THE BEST OF THE BEST</p>
+          <p className="text-sm md:text-xl">{t("THE BEST OF THE BEST")}</p>
           <p className="text-xs md:text-sm">
-            A COMBINATION OF AUTOMATION AND MANUAL CURATION OUR PRO AGENTS AND
+            {t(
+              "A COMBINATION OF AUTOMATION AND MANUAL CURATION OUR PRO AGENTS AND"
+            )}
           </p>
           <p className="text-xs md:text-sm">
-            MODURATION TEAM SELECTS THE HIGHEST QUALITY LISTINGS ON THE MARKET
+            {t(
+              "MODURATION TEAM SELECTS THE HIGHEST QUALITY LISTINGS ON THE MARKET"
+            )}
           </p>
-          <p className="text-xs md:text-sm">FROM ACCROSS THE WORLD</p>
+          <p className="text-xs md:text-sm">{t("FROM ACCROSS THE WORLD")}</p>
         </div>
       </motion.aside>
       <motion.div

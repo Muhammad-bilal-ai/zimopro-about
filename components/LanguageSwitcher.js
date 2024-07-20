@@ -5,9 +5,17 @@ const LanguageSwitcher = () => {
   const router = useRouter();
   const { i18n } = useTranslation();
 
+  useEffect(() => {
+    const storedLanguage = localStorage.getItem("language");
+    if (storedLanguage && storedLanguage !== i18n.language) {
+      i18n.changeLanguage(storedLanguage);
+    }
+  }, [i18n]);
+
   const changeLanguage = (lng) => {
-    router.push(router.pathname, router.asPath, { locale: lng });
+    localStorage.setItem("language", lng);
     i18n.changeLanguage(lng);
+    router.push(router.pathname, router.asPath, { locale: lng });
   };
 
   return (
@@ -24,5 +32,6 @@ const LanguageSwitcher = () => {
 };
 
 import dynamic from "next/dynamic";
+import { useEffect } from "react";
 
 export default dynamic(() => Promise.resolve(LanguageSwitcher), { ssr: false });

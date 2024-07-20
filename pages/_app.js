@@ -5,8 +5,10 @@ import i18n from "@/i18n";
 
 function App({ Component, pageProps }) {
   useEffect(() => {
-    // This is to ensure i18n is loaded
-    i18n.changeLanguage(i18n.language);
+    const storedLanguage = localStorage.getItem("language");
+    if (storedLanguage && storedLanguage !== i18n.language) {
+      i18n.changeLanguage(storedLanguage);
+    }
   }, []);
   return <Component {...pageProps} />;
 }

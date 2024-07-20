@@ -3,7 +3,7 @@ import Image from "next/image";
 import { motion, useInView } from "framer-motion";
 import { useTranslation } from "react-i18next";
 const AboutUs = forwardRef(({ scrollToCategories }, ref) => {
-  const { t } = useTranslation("common");
+  const { t } = useTranslation("translation");
   const [isHovered, setIsHovered] = useState(false);
   const aboutUsRef = useRef(null);
   const isInView = useInView(aboutUsRef, {

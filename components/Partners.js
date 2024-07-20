@@ -3,7 +3,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 
 function Partners() {
-  const { t } = useTranslation("common");
+  const { t } = useTranslation("translation");
   return (
     <div className="relative w-screen h-screen bg-cover bg-center bg-white">
       <div className="absolute inset-0 flex flex-col md:flex-row space-y-6 md:space-x-6 p-6 justify-center items-center w-full h-screen top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">

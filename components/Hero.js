@@ -5,8 +5,7 @@ import { useState } from "react";
 import { useTranslation } from "next-i18next";
 
 const Hero = ({ scrollToAboutUs }) => {
-  const { t } = useTranslation("common");
-  console.log(t("A NEW WORLD"));
+  const { t } = useTranslation("translation");
   const [isHovered, setIsHovered] = useState(false);
   return (
     <div

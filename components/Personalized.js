@@ -3,7 +3,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 
 function Personalized() {
-  const { t } = useTranslation("common");
+  const { t } = useTranslation("translation");
   return (
     <div
       className="relative h-screen bg-cover bg-center overflow-hidden"

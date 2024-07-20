@@ -13,7 +13,7 @@ import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import { useTranslation } from "react-i18next";
 const categories = forwardRef((props, ref) => {
-  const { t } = useTranslation("common");
+  const { t } = useTranslation("translation");
   const categoriesRef = useRef(null);
   const isInView = useInView(categoriesRef, {
     triggerOnce: true,

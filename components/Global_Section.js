@@ -2,7 +2,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 
 function Global_Section() {
-  const { t } = useTranslation("common");
+  const { t } = useTranslation("translation");
   return (
     <div
       className="relative h-screen w-full bg-cover bg-center flex justify-center items-center overflow-hidden"

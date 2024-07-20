@@ -4,7 +4,7 @@ import { motion, useInView, ref } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
 function Entry_Ticket() {
-  const { t } = useTranslation("common");
+  const { t } = useTranslation("translation");
   const isInView = useInView({
     triggerOnce: true,
     threshold: 1,

@@ -7,7 +7,7 @@ import { serverSideTranslations } from "next-i18next";
 import LanguageSwitcher from "../components/LanguageSwitcher";
 
 function Header() {
-  const { t } = useTranslation("common");
+  const { t } = useTranslation("translation");
   return (
     <motion.header
       initial={{ opacity: 0, y: -100 }}

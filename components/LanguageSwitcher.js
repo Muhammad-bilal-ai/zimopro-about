@@ -23,4 +23,6 @@ const LanguageSwitcher = () => {
   );
 };
 
-export default LanguageSwitcher;
+import dynamic from "next/dynamic";
+
+export default dynamic(() => Promise.resolve(LanguageSwitcher), { ssr: false });

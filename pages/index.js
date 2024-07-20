@@ -19,7 +19,7 @@ export default function Home() {
     categoriesRef.current.scrollIntoView({ behavior: "smooth" });
   };
   return (
-    <div>
+    <>
       <Hero scrollToAboutUs={scrollToAboutUs} />
       <AboutUs ref={aboutUsRef} scrollToCategories={scrollToCategories} />
       <Categories ref={categoriesRef} />
@@ -29,6 +29,6 @@ export default function Home() {
       <Partners />
       <Yacht_Section />
       <Car_Section />
-    </div>
+    </>
   );
 }

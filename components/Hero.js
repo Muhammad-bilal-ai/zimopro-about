@@ -14,9 +14,8 @@ const Hero = ({ scrollToAboutUs }) => {
       style={{ backgroundImage: "url('/hero.png')" }}
     >
       <div>
-        <div>
-          <Header />
-        </div>
+        <Header />
+
         <motion.div
           initial={{ initial: 0, x: -100, y: -50 }}
           animate={{ initial: 1, x: 0, y: 0 }}

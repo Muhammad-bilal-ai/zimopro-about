@@ -6,8 +6,8 @@ const LanguageSwitcher = () => {
   const { i18n } = useTranslation();
 
   const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
     router.push(router.pathname, router.asPath, { locale: lng });
+    i18n.changeLanguage(lng);
   };
 
   return (
